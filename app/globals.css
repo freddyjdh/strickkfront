@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.boxshadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+a {
+    cursor: pointer;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 9px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000312;       /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #000312;  /* creates padding around scroll thumb */
+  }
+  
+  @media (pointer: coarse) {
+    .background-fixed {
+            background-attachment: fixed !important;
+    }
+  }
+
+  .partnerlogo{
+    padding-block: 1rem;
+  }
+
+  .partnerlogo img{
+    height: 3rem;
+    width: 7rem;
+  }
