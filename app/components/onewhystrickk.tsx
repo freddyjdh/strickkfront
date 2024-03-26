@@ -24,7 +24,7 @@ const Onewhystrickk = (props: whyProps) => {
                     </h2>
                 </div>
                 <div>
-                    <p className='text-center leading-none'>
+                    <p className='text-center leading-none text-[0.8rem]'>
                         {props.text}
                     </p>
                 </div>
