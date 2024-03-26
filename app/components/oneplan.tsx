@@ -22,12 +22,12 @@ const Oneplan = (props: PlanProps) => {
         <div>
          
           <div className='pt-20'>
-            <h3 className='py-7 text-center text-xl font-semibold'>
+            <h3 className='py-5 text-center text-xl font-semibold'>
               {props.name}
             </h3>
           </div>
           <div>
-            <h1 className='text-center pb-8 font-bold text-[3rem]'>
+            <h1 className='text-center pb-4 font-bold text-[2.6rem]'>
               {props.percentage}
             </h1>
           </div>
