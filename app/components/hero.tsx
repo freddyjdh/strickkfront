@@ -1,6 +1,7 @@
 import React from 'react';
 import Heroimg from '@/public/srtrickkheroimg.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -21,7 +22,7 @@ const Hero = (props: Props) => {
               </p>
           </div>
           <div className='flex justify-center lg:justify-start lg:px-20'>
-            <button className='bg-primary px-7 py-3 rounded-full'>Explore Now</button>
+          <Link href={'https://portal.strickk.com/login'}><button className='bg-primary px-7 py-3 rounded-full'>Explore Now</button></Link>
           </div>
       </div>
       <div className='hidden lg:block lg:basis-1/3 pt-9'>
