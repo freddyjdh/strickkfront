@@ -6,6 +6,7 @@ import { gsap } from 'gsap';
 import menuOpen from '@/public/icon-open.png';
 import menuClose from '@/public/icon-close.png';
 import Logo from '@/public/logo.png';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -44,8 +45,8 @@ useEffect(() => {
           </ul>
         </span>
         <span className='hidden lg:flex gap-1'>
-          <button className='transition ease-in-out delay-150  border border-[#f4bf68] rounded-lg w-[5.5rem] h-[2.2rem] hover:bg-[#f4bf68]'>Login</button>
-          <button className='transition ease-in-out delay-150  border border-[#f4bf68] bg-[#f4bf68] rounded-lg w-[5.5rem] h-[2.2rem] hover:bg-white' >Sign up</button>
+          <Link href={'portal.strickk.com/login'}><button className='transition ease-in-out delay-150  border border-[#f4bf68] rounded-lg w-[5.5rem] h-[2.2rem] hover:bg-[#f4bf68]'>Login</button></Link>
+          <Link href={'portal.strickk.com/register'}> <button className='transition ease-in-out delay-150  border border-[#f4bf68] bg-[#f4bf68] rounded-lg w-[5.5rem] h-[2.2rem] hover:bg-white' >Sign up</button></Link>
         </span>
     </div>
     {open && <div className='flex justify-center align-middle h-[100vh] w-full bg-white py-[30vh] mobilemenu'>
