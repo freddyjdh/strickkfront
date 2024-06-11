@@ -39,7 +39,7 @@ const availablePlans = [
 const Plans = (props: Props) => {
   return (
     <div>
-    <div className='py-40'>
+    <div className='pt-40'>
         <h1 className='text-3xl lg:text-4xl text-center lg:text-left lg:px-20 font-extrabold lg:font-bold  leading-[3.4rem]'>
             AVAILABLE PLANS
         </h1>

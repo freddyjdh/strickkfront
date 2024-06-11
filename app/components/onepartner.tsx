@@ -10,7 +10,7 @@ export type PartnerProps = {
 
 const Onepartner = (props: PartnerProps) => {
   return (
-    <div>
+    <div className='mx-16'>
         <Image className={`${props.width} ${props.animationClass}`} src={props.logo} alt={props.animationClass}/>
     </div>
   )

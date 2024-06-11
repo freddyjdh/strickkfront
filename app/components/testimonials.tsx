@@ -24,7 +24,7 @@ const Testimonials = (props: Props) => {
                     </h3>
                 </span>
                 <span className='lg:basis-1/3'>
-                    <Image className='relative   left-24 lg:left-16 h-[23rem] w-[18.5rem]'  src={Man} alt="man"/>
+                    <Image className='relative   left-24 lg:left-16 h-[23rem] w-[18.5rem] z-10'  src={Man} alt="man"/>
                 </span>
             </div>
         </div>

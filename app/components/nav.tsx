@@ -23,10 +23,19 @@ useEffect(() => {
 // useEffect(() => {
 //    {open && gsap.fromTo('.mobilemenu', {x:0}, {x:-200})}
 //  })
+
+
+const changeCol = ()=>  {
+  if (window.scrollY >= 90){
+      setopen(false)
+  }
+}
+
+window.addEventListener('scroll', changeCol)
  
 
   return (
-    <div className='fixed top-0 left-0 right-0 pt-5 h-20 bg-white'>
+    <div className='fixed top-0 left-0 right-0 pt-5 h-20 bg-white z-50'>
     <div className='flex justify-end gap-[5rem] lg:gap-[18vw] pt-3 lg:px-[9vw]'>
         
         <span>

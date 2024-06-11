@@ -11,6 +11,7 @@ import Coinbase from '@/public/logos/image 18.png'
 import Binance from '@/public/logos/image 19.png'
 import Huobi from '@/public/logos/image 20.png'
 import Onepartner, { PartnerProps } from './onepartner';
+import Marquee from "react-fast-marquee";
 
 type Props = {}
 
@@ -77,14 +78,21 @@ const Partners = (props: Props) => {
         </div>
 
         <div>
-            <div className='flex justify-evenly'>
+            <div >
+             <Marquee  className={'flex justify-evenly'}>   
             {partners && partners.slice(0,4).map((partner: PartnerProps) => { return <Onepartner key={partner.animationClass} logo={partner.logo} animationClass={partner.animationClass} width={partner.width}/>})}
+            </Marquee>
             </div>
-            <div className='flex justify-evenly py-20'>
+            <div className='py-20'>
+            <Marquee  className={'flex justify-evenly'} speed={70}> 
             {partners && partners.slice(4,8).map((partner: PartnerProps) => { return <Onepartner key={partner.animationClass} logo={partner.logo} animationClass={partner.animationClass} width={partner.width}/>})}
+            </Marquee>
             </div>
             <div className='flex justify-evenly'>
+            <Marquee  className={'flex justify-evenly'} speed={80}> 
             {partners && partners.slice(8,10).map((partner: PartnerProps) => { return <Onepartner key={partner.animationClass} logo={partner.logo} animationClass={partner.animationClass} width={partner.width}/>})}
+            </Marquee>
+            
             </div>
         </div>
     </div>

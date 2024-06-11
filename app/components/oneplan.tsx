@@ -15,7 +15,7 @@ const Oneplan = (props: PlanProps) => {
   return (
     <div>
        <div className='flex justify-center'>
-          <Image className='text-center h-32 w-32 z-50 relative top-16' src={props.logo} alt={props.name}/>
+          <Image className='text-center h-32 w-32 z-30 relative top-16' src={props.logo} alt={props.name}/>
           </div>
     <div className='flex justify-center -z-50'>
       <div className={ `h-[47vh] w-[80vw] lg:w-[25vw] border border-primary border-solid rounded-xl boxshadow`}>
