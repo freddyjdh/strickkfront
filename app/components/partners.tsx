@@ -84,7 +84,7 @@ const Partners = (props: Props) => {
             </Marquee>
             </div>
             <div className='py-20'>
-            <Marquee  className={'flex justify-evenly'} speed={70}> 
+            <Marquee  className={'flex justify-evenly'} speed={72}> 
             {partners && partners.slice(4,8).map((partner: PartnerProps) => { return <Onepartner key={partner.animationClass} logo={partner.logo} animationClass={partner.animationClass} width={partner.width}/>})}
             </Marquee>
             </div>
